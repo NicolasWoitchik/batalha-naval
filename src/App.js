@@ -1,7 +1,13 @@
 import React from "react";
+<<<<<<< HEAD
 import { App } from "./style";
 import Home from "./components/Home";
 import Game from "./components/Game/Game";
+=======
+import GlobalStyle from "./styles/global";
+
+import Routes from "./routes";
+>>>>>>> 4320d57e959b6d8a3eae1a24e81fe0ba213a57ce
 
 import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
 
@@ -20,6 +26,7 @@ function Header(props) {
 }
 function Main() {
   return (
+<<<<<<< HEAD
     <BrowserRouter>
       <App>
         <Header>
@@ -30,6 +37,12 @@ function Main() {
         </Header>
       </App>
     </BrowserRouter>
+=======
+    <>
+      <Routes />
+      <GlobalStyle />
+    </>
+>>>>>>> 4320d57e959b6d8a3eae1a24e81fe0ba213a57ce
   );
 }
 

@@ -1,21 +1,13 @@
-import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-export const Input = styled.input`
-  padding: 20px;
-  margin: 0;
-  border-radius: 0;
-  width: calc(100% - 45px);
-  display: block;
-  margin: 10px 0;
-  border: 2px solid #f02342;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 26px;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
-  &:focus {
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+export default createGlobalStyle`
+  *{
+    padding:0;
+    margin:0;
+    outline:0;
+    box-sizing:border-box
   }
+<<<<<<< HEAD:src/style.js
 `;
 
 export const Button = styled.button`
@@ -80,20 +72,25 @@ export const App = styled.div`
       min-height: 100vh;
       background: rgba(0, 0, 0, 0.4);
     }
+=======
+  html,body, #root{
+    min-height:100vh;
   }
 
-  h2 {
-    text-align: center;
-    color: #f02342;
-    /* margin: 0; */
-    border-radius: 0;
-  }
-  p {
-    font-size: 16px;
+  body{
+    background:#282c34;
+    -webkit-font-smoothing: antialiased !important;
+>>>>>>> 4320d57e959b6d8a3eae1a24e81fe0ba213a57ce:src/styles/global.js
   }
 
-  .form-group {
-    margin: 40px 0;
+  body,input,button{
+    color:#333;
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+  button{
+    cursor:pointer
   }
 
   @keyframes pulse {
@@ -113,7 +110,6 @@ export const App = styled.div`
   @keyframes pulse2 {
     0% {
       border-image: radial-gradient(circle, #f02342 0%, #000 100%) 1 1 1;
-      color: radial-gradient(circle, #f02342 0%, #000 100%) 1 1 1;
     }
     5% {
       border-image: radial-gradient(circle, #000 0%, #f02342 10%, #000 100%) 1 1
