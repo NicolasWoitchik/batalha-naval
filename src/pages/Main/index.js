@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Input, Button } from "./styles";
-import { Link } from "react-router-dom";
 
 class Home extends React.Component {
   constructor(props) {
@@ -8,7 +7,7 @@ class Home extends React.Component {
 
     this.state = {
       room: "",
-      loading: false
+      loading: false,
     };
 
     this.handleCreateRoom = this.handleCreateRoom.bind(this);
@@ -20,12 +19,12 @@ class Home extends React.Component {
     if (event.target.value.length === 6) {
       // this.props.history.push("/game");
       this.setState({
-        loading: true
+        loading: true,
       });
       return;
     }
     this.setState({
-      loading: true
+      loading: true,
     });
   }
 

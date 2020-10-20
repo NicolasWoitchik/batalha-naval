@@ -9,10 +9,10 @@ export default class Create extends Component {
     name: "",
     max: "",
     pass: "",
-    loading: false
+    loading: false,
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     this.setState({ loading: true });
     setTimeout(() => {
@@ -20,23 +20,23 @@ export default class Create extends Component {
     }, 500);
   };
 
-  handleNameChange = e => {
+  handleNameChange = (e) => {
     this.setState({ name: e.target.value });
   };
-  handleMaxChange = e => {
+  handleMaxChange = (e) => {
     this.setState({ max: e.target.value });
   };
-  handlePassChange = e => {
+  handlePassChange = (e) => {
     this.setState({ pass: e.target.value });
   };
-  handlePassChange = e => {
+  handlePassChange = (e) => {
     this.setState({ pass: e.target.value });
   };
-  handleBack = e => {
+  handleBack = (e) => {
     this.props.history.push("/");
   };
   render() {
-    const { loading, name, max, pass } = this.state;
+    const { loading, name, pass } = this.state;
     return (
       <Container>
         <header className="header-app">

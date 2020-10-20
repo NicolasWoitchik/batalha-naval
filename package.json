@@ -8,12 +8,8 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-<<<<<<< HEAD
-    "react-router-dom": "^5.2.0",
-=======
     "react-icons": "^3.9.0",
-    "react-router-dom": "^5.1.2",
->>>>>>> 4320d57e959b6d8a3eae1a24e81fe0ba213a57ce
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.0",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.0.1"
